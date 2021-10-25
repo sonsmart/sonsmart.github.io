@@ -7,11 +7,15 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101var h">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://github.com/sonsmart/sonsmart.github.io.git/index.html">
+<meta property="og:url" content="https://github.com/sonsmart/sonsmart.github.io.git/2021/10/25/1%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%A4%84%E7%90%86cookie/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101var h">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-10-25T14:46:09.665Z">
+<meta property="article:modified_time" content="2021-06-04T17:07:45.965Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,70 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-3使用express来搭建web服务器" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/sonsmart/sonsmart.github.io.git/2021/10/25/3%E4%BD%BF%E7%94%A8express%E6%9D%A5%E6%90%AD%E5%BB%BAweb%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="article-date">
-  <time datetime="2021-10-25T14:46:09.700Z" itemprop="datePublished">2021-10-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/sonsmart/sonsmart.github.io.git/2021/10/25/3%E4%BD%BF%E7%94%A8express%E6%9D%A5%E6%90%AD%E5%BB%BAweb%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-id="ckv6rwayy00002wu04pcl6yp5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-2使用http来搭建服务器" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/sonsmart/sonsmart.github.io.git/2021/10/25/2%E4%BD%BF%E7%94%A8http%E6%9D%A5%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="article-date">
-  <time datetime="2021-10-25T14:46:09.695Z" itemprop="datePublished">2021-10-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="使用-Node-创建-Web-服务器"><a href="#使用-Node-创建-Web-服务器" class="headerlink" title="使用 Node 创建 Web 服务器"></a>使用 Node 创建 Web 服务器</h1><p>什么是 Web 服务器？<br>Web服务器一般指网站服务器，是指驻留于因特网上某种类型计算机的程序，Web服务器的基本功能就是提供Web信息浏览服务。它只需支持HTTP协议、HTML文档格式及URL，与客户端的网络浏览器配合。</p>
-<p>大多数 web 服务器都支持服务端的脚本语言（php、python、ruby）等，并通过脚本语言从数据库获取数据，将结果返回给客户端浏览器。</p>
-<p>目前最主流的三个Web服务器是Apache、Nginx、IIS。</p>
-<p>Node.js 提供了 http 模块，http 模块主要用于搭建 HTTP 服务端和客户端，使用 HTTP 服务器或客户端功能必须调用 http 模块，代码如下：<br>var http = require(‘http’);<br>在通常的服务器中，数据流通的方式是客户先通过浏览器进行发送请求，服务器在项目中进行查找，然后进客户所需要的页面进行返回，在查找的过程中可能存在两种情况，就是存在和不存在，当然，我们会做出判断，下面就是简单的服务器实现过程：</p>
-<p><img src="C:\Users\USER\AppData\Roaming\Typora\typora-user-images\image-20211006013632331.png" alt="image-20211006013632331"></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&#x27;fs&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> url = <span class="built_in">require</span>(<span class="string">&#x27;url&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建服务器,本文件为index.js</span></span><br><span class="line">http.createServer(<span class="function"><span class="keyword">function</span>(<span class="params">request, response</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//从文件系统中去请求的文件内容.</span></span><br><span class="line">    <span class="comment">// 如43.110.23.440:80/index.js,那么request.url为/index.js,request.url.substr(1)为index.js</span></span><br><span class="line">    <span class="comment">// 访问端口的话，request.url为/，那么直接返回主页面</span></span><br><span class="line">    <span class="keyword">if</span> (request.url == <span class="string">&#x27;/&#x27;</span>) &#123;</span><br><span class="line">        fs.readFile(<span class="string">&#x27;html/login.html&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">err, data</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (err) &#123;</span><br><span class="line">                <span class="built_in">console</span>.log(err);</span><br><span class="line">                <span class="comment">//HTTP 状态码 404 ： NOT FOUND</span></span><br><span class="line">                <span class="comment">//Content Type:text/plain</span></span><br><span class="line">                response.writeHead(<span class="number">404</span>, &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/html&#x27;</span> &#125;);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">//HTTP 状态码 200 ： OK</span></span><br><span class="line">                <span class="comment">//Content Type:text/plain</span></span><br><span class="line">                response.writeHead(<span class="number">200</span>, &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/html&#x27;</span> &#125;);</span><br><span class="line"></span><br><span class="line">                <span class="comment">//写会回相应内容</span></span><br><span class="line">                response.write(data.toString());</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//发送响应数据</span></span><br><span class="line">            response.end();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//解析请求，包括文件名</span></span><br><span class="line">        <span class="keyword">var</span> pathname = url.parse(request.url).pathname;</span><br><span class="line">        <span class="comment">//输出请求的文件名</span></span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&quot;Request for &quot;</span> + pathname + <span class="string">&quot;  received.&quot;</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(request.url);</span><br><span class="line">        <span class="comment">//当请求css文件夹时，url解析后为/css/xxxx.css,firstDir为xxxx.css,设置文件返回类型是text/css</span></span><br><span class="line">        <span class="keyword">var</span> firstDir = pathname &amp;&amp; pathname.split(<span class="string">&#x27;/&#x27;</span>)[<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">var</span> ContentType = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 用.作为分隔符来判断文件类型，直接访问端口一律默认为请求html文件</span></span><br><span class="line">        <span class="keyword">if</span> (firstDir &amp;&amp; firstDir.split(<span class="string">&#x27;.&#x27;</span>)[<span class="number">1</span>] === <span class="string">&#x27;css&#x27;</span>) &#123;</span><br><span class="line">            ContentType = &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/css&#x27;</span> &#125;;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (firstDir &amp;&amp; firstDir.split(<span class="string">&#x27;.&#x27;</span>)[<span class="number">1</span>] === <span class="string">&#x27;js&#x27;</span>) &#123;</span><br><span class="line">            ContentType = &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/javascript&#x27;</span> &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (firstDir &amp;&amp; firstDir.split(<span class="string">&#x27;.&#x27;</span>)[<span class="number">1</span>] === <span class="string">&#x27;png&#x27;</span>) &#123;</span><br><span class="line">            ContentType = &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/png&#x27;</span> &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            ContentType = &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/html&#x27;</span> &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        fs.readFile(pathname.substr(<span class="number">1</span>), <span class="function"><span class="keyword">function</span>(<span class="params">err, data</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (err) &#123;</span><br><span class="line">                <span class="built_in">console</span>.log(err);</span><br><span class="line">                <span class="comment">//HTTP 状态码 404 ： NOT FOUND</span></span><br><span class="line">                <span class="comment">//Content Type:text/plain</span></span><br><span class="line">                response.writeHead(<span class="number">404</span>, &#123; <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;text/html&#x27;</span> &#125;);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">//HTTP 状态码 200 ： OK</span></span><br><span class="line">                <span class="comment">//Content Type:text/plain</span></span><br><span class="line">                response.writeHead(<span class="number">200</span>, ContentType);</span><br><span class="line"></span><br><span class="line">                <span class="comment">//写会回相应内容</span></span><br><span class="line">                response.write(data.toString());</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//发送响应数据</span></span><br><span class="line">            response.end();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;).listen(<span class="number">80</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;Server running at http://127.0.0.1/&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/sonsmart/sonsmart.github.io.git/2021/10/25/2%E4%BD%BF%E7%94%A8http%E6%9D%A5%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/" data-id="ckv6rwazw00022wu03f9efjjr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-1服务器处理cookie" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-1服务器处理cookie" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/sonsmart/sonsmart.github.io.git/2021/10/25/1%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%A4%84%E7%90%86cookie/" class="article-date">
   <time datetime="2021-10-25T14:46:09.665Z" itemprop="datePublished">2021-10-25</time>
@@ -149,60 +90,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/sonsmart/sonsmart.github.io.git/2021/09/27/hello-world/" class="article-date">
-  <time datetime="2021-09-27T09:01:19.474Z" itemprop="datePublished">2021-09-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/sonsmart/sonsmart.github.io.git/2021/10/25/2%E4%BD%BF%E7%94%A8http%E6%9D%A5%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          (no title)
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/sonsmart/sonsmart.github.io.git/2021/09/27/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/sonsmart/sonsmart.github.io.git/2021/09/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/sonsmart/sonsmart.github.io.git/2021/09/27/hello-world/" data-id="ckv6rwazy00032wu0bzds3c8w" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
